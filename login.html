@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> LOGINPAGE </title>     
+    </head>
+    <body background="e.jpg"></body>
+    <style>
+        body {
+            background-size: 100% 100%;
+        }
+        body{
+            background-color: antiquewhite;
+          }
+          @media screen and  (min-width:550px){
+
+          body {
+           background-color: rgb(9, 181, 66);
+          }
+          h4{
+            color: crimson;
+          }
+          h4{
+            font-style: oblique;
+          }
+          h3{
+            font-style: normal;
+          }
+
+          }     
+          </style>    
+    <script>
+        //user validations
+        function loginvalidation(){
+            //ramesh
+            var uname=document.myform.username.value;
+            //ramesh@123
+            var password=document.myform.password.value;
+            if(uname==null || uname==""){
+                alert("name cant be blank")
+                return false;
+            }
+            else if(password.length<6){
+                alert("password must be 6 letters")
+                return false;
+            }
+            return true
+        }
+        </script>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><h3> HEALTH CARE LOGIN PAGE</h3>
+            <form name="myform" action="C:\Users\house\Desktop\UI DEVELOPMENT\PROJECT 5\mywebsite.html" 
+    onsubmit="return loginvalidation(this)">
+        <h4>Username: </h4>
+        <input type="text" placeholder="username" name="username"><br>
+        <h4>Password:</h4>
+         <input type="password" placeholder="password" name="password"><br><br>
+        <input type="submit">
+        </center>
+    </form>
+    </body>
+</html>
